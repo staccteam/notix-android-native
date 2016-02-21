@@ -8,6 +8,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+
+import static android.R.layout.simple_list_item_1;
+import static co.stacc.android.notix.R.layout.activity_main;
+import static co.stacc.android.notix.R.layout.content_main;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,14 +28,20 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
+
+        ListView myListView = (ListView) findViewById(R.id.myListView);
+//        ArrayList<String> items = new ArrayList<String>();
+//
+//        items.add("Dino");
+//        items.add("Shubham");
+//        items.add("Preetesh");
+//        items.add("Vroon");
+
+        String[] names = {"Dino", "Shubham"};
+
+        ListAdapter adapter = new ArrayAdapter<String>(this, simple_list_item_1, names);
+        myListView.setAdapter(adapter);
     }
 
     @Override
