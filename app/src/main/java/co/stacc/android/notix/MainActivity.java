@@ -29,16 +29,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-
         ListView myListView = (ListView) findViewById(R.id.myListView);
-//        ArrayList<String> items = new ArrayList<String>();
-//
-//        items.add("Dino");
-//        items.add("Shubham");
-//        items.add("Preetesh");
-//        items.add("Vroon");
 
-        String[] names = {"Dino", "Shubham"};
+        String[] names = {"Test 1", "Test 2"};
 
         ListAdapter adapter = new ArrayAdapter<String>(this, simple_list_item_1, names);
         myListView.setAdapter(adapter);
