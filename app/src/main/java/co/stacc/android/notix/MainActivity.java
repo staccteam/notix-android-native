@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle(""); // remove app name from AppBar, no better way to achieve this found.
+        getSupportActionBar().setDisplayShowTitleEnabled(false); // remove app name from AppBar, no better way to achieve this found.
 
 
         ListView myListView = (ListView) findViewById(R.id.myListView);
