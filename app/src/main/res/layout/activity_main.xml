@@ -10,17 +10,24 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16sp"
+                android:layout_marginLeft="16sp"
                 android:src="@drawable/ic_menu_white_24dp"
                 android:contentDescription="@string/iconHamburger" />
-        </android.support.v7.widget.Toolbar>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary">
+
+            </android.support.v7.widget.Toolbar>
+        </LinearLayout>
 
     </android.support.design.widget.AppBarLayout>
 

@@ -3,8 +3,9 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_side_drawer">SideDrawer</string>
 
-    <string name="appTitle">Saxxx</string>
+    <string name="appTitle">Notix</string>
     <string name="iconHamburger">icon-hamburger</string>
+    <string name="testText">lorem ipsum</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
