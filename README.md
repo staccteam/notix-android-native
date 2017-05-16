@@ -4,8 +4,7 @@
 #### UI Screenshots:
 http://imgur.com/a/4RvGb
 
-**Project by**
-
+**Project by**  
 Stacc (P) Ltd.  
 Jabalpur, IN  
 [contact[at]stacc.co](mailto:contact@stacc.co)
